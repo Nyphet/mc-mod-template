@@ -17,7 +17,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "author.modid.ModIfLoader"
+      "author.modid.ModIdLoader"
     ]
   },
   "mixins": [],
