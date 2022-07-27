@@ -8,8 +8,8 @@ and this project adheres to [Forge Semantic Versioning](https://docs.minecraftfo
 ## [Unreleased]
 - Nothing new.
 
-## [1.18.2-1.0.0.0] - yyyy/mm/dd
+## [1.19-1.0.0.0] - yyyy/mm/dd
 - List of changes.
 
 [Unreleased]: https://github.com/author/mod-id
-[1.18.2-1.0.0.0]: https://github.com/author/mod-id/releases/tag/v1.18.2-1.0.0.0
+[1.19-1.0.0.0]: https://github.com/author/mod-id/releases/tag/v1.19-1.0.0.0
