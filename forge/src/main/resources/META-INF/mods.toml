@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="GNU AGPLv3"
+issueTrackerURL="https://github.com/author/mod-id/issues" #optional
+[[mods]]
+modId="modid"
+version="1.0.0.0"
+displayName="Mod Title"
+updateJSONURL="https://raw.githubusercontent.com/author/mod-id/branch/forge/updates.json" #optional
+displayURL="https://github.com/author/mod-id" #optional
+logoFile="mod-id.jpg" #better use a png or a gif
+# A text field displayed in the mod UI
+# credits="Thank who deserves it." #optional
+authors="Author" #optional
+description="Mod brief description."
+[[dependencies.modid]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40.1,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.modid]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,)"
+    ordering="NONE"
+    side="BOTH"
