@@ -7,10 +7,8 @@ modId="modid"
 version="${modVersion}"
 displayName="${modTitle}"
 updateJSONURL="https://raw.githubusercontent.com/author/mod-id/master/forge/updates.json" #optional
-displayURL="https://github.com/author/mod-id/${mcVersion}" #optional
+displayURL="https://github.com/author/mod-id/tree/${mcVersion}" #optional
 logoFile="mod-id.jpg" #better use a png or a gif
-# A text field displayed in the mod UI
-# credits="Thank who deserves it." #optional
 authors="${author}" #optional
 # Display Test controls the display for your mod in the server connection screen
 # MATCH_VERSION means that your mod will cause a red X if the versions on client and server differ. This is the default behaviour and should be what you choose if you have server and client elements to your mod.
