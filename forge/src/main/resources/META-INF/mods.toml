@@ -9,7 +9,6 @@ displayName="${modTitle}"
 updateJSONURL="https://raw.githubusercontent.com/author/mod-id/master/forge/updates.json" #optional
 displayURL="https://github.com/author/mod-id/${mcVersion}" #optional
 logoFile="mod-id.jpg" #better use a png or a gif
-# A text field displayed in the mod UI
 # credits="Thank who deserves it." #optional
 authors="${author}" #optional
 # Display Test controls the display for your mod in the server connection screen
