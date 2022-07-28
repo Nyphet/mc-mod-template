@@ -10,7 +10,7 @@
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/mod-id",
     "issues": "https://github.com/author/mod-id/issues",
-    "sources": "https://github.com/author/mod-id/tree/branch"
+    "sources": "https://github.com/author/mod-id/tree/1.19"
   },
   "license": "GPL-3.0-or-later",
   "icon": "assets/modid/mod-id.jpg",
