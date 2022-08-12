@@ -3,7 +3,7 @@ loaderVersion="[41,)"
 license="GNU AGPLv3"
 issueTrackerURL="https://github.com/author/mod-id/issues" #optional
 [[mods]]
-modId="modid"
+modId="${modid}"
 version="${modVersion}"
 displayName="${modTitle}"
 updateJSONURL="https://raw.githubusercontent.com/author/mod-id/master/forge/updates.json" #optional
@@ -19,13 +19,13 @@ authors="${author}" #optional
 # IMPORTANT NOTE: this is NOT an instruction as to which environments (CLIENT or DEDICATED SERVER) your mod loads on. Your mod should load (and maybe do nothing!) whereever it finds itself.
 #displayTest="MATCH_VERSION" # MATCH_VERSION is the default if nothing is specified #optional
 description="Mod brief description."
-[[dependencies.modid]]
+[[dependencies.${modid}]]
     modId="forge"
     mandatory=true
     versionRange="[${forgeVersion},)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.modid]]
+[[dependencies.${modid}]]
     modId="minecraft"
     mandatory=true
     versionRange="[${mcVersion},)"
