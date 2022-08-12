@@ -28,12 +28,34 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
-processResources {
-	inputs.property "version", project.mod_version
+def resourceTarget = 'fabric.mod.json'
+def intoTargets = ["$rootDir/bin/main/"]
+def replaceProperties = [
+  modid: archives_base_name,
+  mcVersion: minecraft_version,
+  modVersion: mod_version,
+  fabricVersion: loader_version
+]
 
-	filesMatching("fabric.mod.json") {
-		expand "version": project.mod_version
-	}
+processResources {
+  inputs.properties replaceProperties
+  replaceProperties.put 'project', project
+
+  filesMatching(resourceTarget) {
+    expand replaceProperties
+  }
+
+  intoTargets.each { target ->
+    if (file(target).exists()) {
+      copy {
+        from(sourceSets.main.resources) {
+          include resourceTarget
+          expand replaceProperties
+        }
+        into target
+      }
+    }
+  }
 }
 
 tasks.withType(JavaCompile).configureEach {

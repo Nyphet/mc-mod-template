@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "${modid}",
+  "version": "${modVersion}",
   "name": "Mod Title",
   "description": "Mod brief description.",
   "authors": [
@@ -10,21 +10,21 @@
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/mod-id",
     "issues": "https://github.com/author/mod-id/issues",
-    "sources": "https://github.com/author/mod-id/tree/branch"
+    "sources": "https://github.com/author/mod-id/tree/${mcVersion}"
   },
   "license": "GPL-3.0-or-later",
-  "icon": "assets/modid/mod-id.jpg",
+  "icon": "assets/${modid}/mod-id.jpg",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "author.modid.ModIdLoader"
+      "author.${modid}.ModIdLoader"
     ]
   },
   "mixins": [],
   "depends": {
-    "fabricloader": ">=0.14.8",
+    "fabricloader": ">=${fabricVersion}",
     "fabric": "*",
-    "minecraft": "1.19.1",
+    "minecraft": "${mcVersion}",
     "java": ">=17"
   }
 }
