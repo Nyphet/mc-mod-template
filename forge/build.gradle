@@ -75,7 +75,7 @@ dependencies {
 }
 
 def resourceTargets = ['META-INF/mods.toml', 'pack.mcmeta']
-def intoTargets = ["$rootDir/build/resources/main/", "$rootDir/bin/main/"]
+def intoTargets = ["$rootDir/bin/main/"]
 def replaceProperties = [
   modid: modid,
   modTitle: modTitle,
