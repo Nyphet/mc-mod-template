@@ -1,14 +1,14 @@
 modLoader="javafml"
-loaderVersion="[42,)"
+loaderVersion="[${loader_version},)"
 license="GNU AGPLv3"
-issueTrackerURL="https://github.com/author/mod-id/issues" #optional
+issueTrackerURL="https://github.com/${github_user}/${modid_kebab}/issues" #optional
 [[mods]]
 modId="${modid}"
-version="${modVersion}"
-displayName="${modTitle}"
-updateJSONURL="https://raw.githubusercontent.com/author/mod-id/master/forge/updates.json" #optional
-displayURL="https://github.com/author/mod-id/${mcVersion}" #optional
-logoFile="mod-id.jpg" #better use a png or a gif
+version="${mod_version}"
+displayName="${mod_title}"
+updateJSONURL="https://raw.githubusercontent.com/${github_user}/${modid_kebab}/master/forge/updates.json" #optional
+displayURL="https://github.com/${github_user}/${modid_kebab}/tree/${minecraft_version}" #optional
+logoFile="${modid_kebab}.png" #optional
 # credits="Thank who deserves it." #optional
 authors="${author}" #optional
 # Display Test controls the display for your mod in the server connection screen
@@ -22,12 +22,12 @@ description="Mod brief description."
 [[dependencies.${modid}]]
     modId="forge"
     mandatory=true
-    versionRange="[${forgeVersion},)"
+    versionRange="[${loader_version}${forge_subversion},)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.${modid}]]
     modId="minecraft"
     mandatory=true
-    versionRange="[${mcVersion},)"
+    versionRange="[${minecraft_version},)"
     ordering="NONE"
     side="BOTH"
