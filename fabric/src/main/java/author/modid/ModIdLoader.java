@@ -12,7 +12,7 @@ public class ModIdLoader implements ModInitializer {
   public static final String MODID = "modid";
 
   @Override
-	public void onInitialize() {
+  public void onInitialize() {
     // Register handlers and configs.
   }
 }

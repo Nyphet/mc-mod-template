@@ -2,22 +2,22 @@
   "schemaVersion": 1,
   "id": "${modid}",
   "version": "${modVersion}",
-  "name": "Mod Title",
+  "name": "${mod_title}",
   "description": "Mod brief description.",
   "authors": [
     "Author"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/mod-id",
-    "issues": "https://github.com/author/mod-id/issues",
-    "sources": "https://github.com/author/mod-id/tree/${mcVersion}"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/${modid_kebab}",
+    "issues": "https://github.com/${github_user}/${modid_kebab}/issues",
+    "sources": "https://github.com/${github_user}/${modid_kebab}/tree/${minecraft_version}"
   },
   "license": "GPL-3.0-or-later",
-  "icon": "assets/${modid}/mod-id.jpg",
+  "icon": "assets/${modid}/${modid_kebab}.jpg",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "author.${modid}.ModIdLoader"
+      "${group}.${modid}.ModIdLoader"
     ]
   },
   "mixins": [],
