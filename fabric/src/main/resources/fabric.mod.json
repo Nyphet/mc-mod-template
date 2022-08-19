@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "${modid}",
-  "version": "${modVersion}",
+  "version": "${mod_version}",
   "name": "${mod_title}",
   "description": "Mod brief description.",
   "authors": [
@@ -22,9 +22,9 @@
   },
   "mixins": [],
   "depends": {
-    "fabricloader": ">=${fabricVersion}",
+    "fabricloader": ">=${fabric_version}",
     "fabric": "*",
-    "minecraft": "${mcVersion}",
+    "minecraft": "${mc_version}",
     "java": ">=17"
   }
 }
